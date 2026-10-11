@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Royal Choice · Kasino duit palsu untuk telefon anda</title>
+<meta name="description" content="36 game kasino dengan duit palsu: slot, meja dan game pantas. Tiada deposit, tiada pengeluaran.">
+<link rel="icon" href="icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Rajdhani:wght@500;600;700&display=swap">
+<style>
+:root{
+  --bg:#f7f1e3;--bg2:#efe6d0;--ink:#1d1430;--mute:#5b5070;--gold:#8a5d00;--brass:#b8860b;--crim:#b3122f;
+  --felt:#0f4a37;--felt2:#0a3326;--on-felt:#f4ecda;--line:rgba(120,80,0,.38);
+  --serif:'Cinzel',Georgia,'Times New Roman',serif;--sans:'Rajdhani','Segoe UI',system-ui,sans-serif;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0c0816;--bg2:#15102a;--ink:#f4ecda;--mute:#b9afc9;--gold:#e8c25a;--brass:#c99a2e;--crim:#e0294b;
+  --felt:#0d3b2c;--felt2:#082820;--line:rgba(232,194,90,.35)}}
+:root[data-theme="dark"]{
+  --bg:#0c0816;--bg2:#15102a;--ink:#f4ecda;--mute:#b9afc9;--gold:#e8c25a;--brass:#c99a2e;--crim:#e0294b;
+  --felt:#0d3b2c;--felt2:#082820;--line:rgba(232,194,90,.35)}
+html{scroll-padding-top:calc(72px + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:500 18px/1.55 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
+.wrap{width:min(1120px,100% - 40px);margin-inline:auto}
+h1,h2,h3{font-family:var(--serif);font-weight:800;line-height:1.12;margin:0;letter-spacing:.01em}
+h2{font-size:clamp(26px,4vw,40px)}
+p{margin:0}.lead{font-size:clamp(19px,2.4vw,22px);color:var(--mute);max-width:46ch}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 24px;border-radius:999px;border:2px solid var(--brass);font:700 18px var(--sans);text-decoration:none;cursor:pointer;background:none;color:var(--ink);transition:transform .15s,background .2s}
+.btn:active{transform:scale(.96)}
+.btn.main{background:linear-gradient(180deg,#f3d27a,#c99a2e);color:#2a1a00;border-color:#8a5d00}
+.btn.main:hover{background:linear-gradient(180deg,#ffe08a,#d8a935)}
+.btn.ghost:hover{background:var(--bg2)}
+/* header */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:18px;min-height:64px}
+.logo{font:800 20px var(--serif);text-decoration:none;display:flex;align-items:center;gap:10px;margin-right:auto}
+.logo svg{width:30px;height:30px}
+nav{display:flex;gap:22px}nav a{text-decoration:none;color:var(--mute);font-weight:600}nav a:hover{color:var(--ink)}
+@media (max-width:760px){nav{display:none}}
+.logo{white-space:nowrap}.bar .btn{white-space:nowrap}
+@media (max-width:420px){.logo{font-size:17px}.bar{gap:10px}.bar .btn{min-height:42px;padding:0 16px;font-size:16px}.logo svg{width:26px;height:26px}}
+/* hero */
+.hero{padding:clamp(36px,7vw,84px) 0 clamp(40px,6vw,72px)}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,5vw,64px);align-items:center}
+@media (max-width:860px){.hero .wrap{grid-template-columns:1fr}}
+.hero h1{font-size:clamp(36px,6.4vw,68px);margin-bottom:18px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.fine{margin-top:16px;font-size:16px;color:var(--mute);max-width:52ch}
+/* meja demo */
+.table{background:radial-gradient(120% 90% at 50% 0,var(--felt),var(--felt2));color:var(--on-felt);border:3px solid var(--brass);border-radius:28px;padding:24px 22px 22px;box-shadow:0 0 0 6px color-mix(in srgb,var(--brass) 25%,transparent),0 24px 50px rgba(0,0,0,.35)}
+.table h2{font-size:22px;margin-bottom:4px}.table .sub{font-size:16px;opacity:.85;margin-bottom:16px}
+.reels{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;background:#0006;border-radius:16px;padding:12px;border:2px solid #0008}
+.reel{aspect-ratio:1/1.05;background:#fffbea;border-radius:12px;display:grid;place-items:center;font-size:clamp(38px,9vw,60px);overflow:hidden;box-shadow:inset 0 8px 14px -8px #0007,inset 0 -8px 14px -8px #0007;color:#1d1430}
+.reel.spin span{animation:drop .09s linear infinite}
+@keyframes drop{from{transform:translateY(-35%)}to{transform:translateY(35%)}}
+.reel.win{animation:glow .7s ease 2}@keyframes glow{50%{box-shadow:0 0 0 4px #ffd23a,inset 0 0 18px #ffd23a}}
+.row{display:flex;justify-content:space-between;align-items:center;margin-top:14px;gap:12px}
+.credit{font:800 24px var(--serif)}.credit small{display:block;font:600 14px var(--sans);opacity:.8}
+.table .btn.main{min-width:140px}
+.say{min-height:26px;margin-top:10px;font-weight:700;color:#ffe08a}
+/* lantai kasino */
+section{padding:clamp(44px,7vw,84px) 0}
+.alt{background:var(--bg2);border-block:1px solid var(--line)}
+.head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:18px;margin-bottom:28px}
+.head p{color:var(--mute);max-width:44ch}
+.tabs{display:flex;flex-wrap:wrap;gap:8px}
+.tab{min-height:44px;padding:0 18px;border-radius:999px;border:2px solid var(--line);background:none;color:var(--ink);font:700 17px var(--sans);cursor:pointer}
+.tab[aria-pressed="true"]{background:var(--brass);border-color:var(--brass);color:#1d1100}
+.games{list-style:none;margin:24px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);column-gap:36px}
+@media (max-width:900px){.games{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.games{grid-template-columns:1fr}}
+.games li{display:grid;grid-template-columns:44px 1fr;gap:12px;align-items:center;padding:13px 0;border-bottom:1px solid var(--line)}
+.chip{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font-size:22px;background:#fff7dc;border:3px dashed var(--brass);box-shadow:inset 0 0 0 3px #e9d9a6;color:#1d1430}
+.games b{display:block;font:800 17px var(--serif);letter-spacing:.01em}.games span{color:var(--mute);font-size:16px;line-height:1.3}
+.count{margin-top:18px;color:var(--mute)}
+/* ciri */
+.ledger{margin:0;display:grid;grid-template-columns:1fr 1fr;column-gap:56px}
+@media (max-width:820px){.ledger{grid-template-columns:1fr}}
+.ledger div{padding:18px 0;border-top:2px solid var(--brass)}
+.ledger dt{font:800 21px var(--serif);margin-bottom:6px}.ledger dd{margin:0;color:var(--mute)}
+/* tahap */
+.ladder{display:flex;flex-wrap:wrap;gap:0;margin-top:28px;border:2px solid var(--brass);border-radius:18px;overflow:hidden}
+.ladder div{flex:1 1 130px;padding:16px 14px;text-align:center;border-right:1px solid var(--line);font:800 18px var(--serif)}
+.ladder div:nth-child(1){background:#7a4a24;color:#ffe9cf}.ladder div:nth-child(2){background:#9aa3ad;color:#10151a}
+.ladder div:nth-child(3){background:#e8c25a;color:#2a1a00}.ladder div:nth-child(4){background:#7ed3ee;color:#06222d}
+.ladder div:nth-child(5){background:#7a3bd0;color:#fff}.ladder div:nth-child(6){background:#0a0710;color:#e8c25a}
+.steps{list-style:none;counter-reset:s;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+@media (max-width:820px){.steps{grid-template-columns:1fr}}
+.steps li{counter-increment:s;position:relative;padding-left:60px}
+.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font:800 20px var(--serif);background:var(--brass);color:#1d1100}
+.steps h3{font-size:20px;margin-bottom:4px}.steps p{color:var(--mute)}
+/* tanggungjawab, faq */
+.care{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,64px)}
+@media (max-width:820px){.care{grid-template-columns:1fr}}
+.care ul{margin:14px 0 0;padding-left:22px;color:var(--mute)}.care li{margin-bottom:8px}
+details{border-bottom:1px solid var(--line);padding:6px 0}
+summary{cursor:pointer;min-height:48px;display:flex;align-items:center;font:700 19px var(--sans);list-style:none}
+summary::-webkit-details-marker{display:none}summary::after{content:'+';margin-left:auto;font:800 24px var(--serif);color:var(--gold);transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}details p{color:var(--mute);padding:0 0 14px;max-width:70ch}
+footer{padding:36px 0 44px;border-top:1px solid var(--line);color:var(--mute);font-size:16px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#atas" aria-label="Royal Choice, ke atas">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8 48V20l12 12 12-20 12 20 12-12v28z" fill="#e8c25a" stroke="#8a5d00" stroke-width="3" stroke-linejoin="round"/><circle cx="8" cy="20" r="4" fill="#d4163c"/><circle cx="32" cy="12" r="4" fill="#d4163c"/><circle cx="56" cy="20" r="4" fill="#d4163c"/></svg>
+      Royal Choice
+    </a>
+    <nav aria-label="Menu utama"><a href="#lantai">Game</a><a href="#ciri">Ciri</a><a href="#mula">Cara mula</a><a href="#soalan">Soalan</a></nav>
+    <a class="btn main play" href="#mula">Main sekarang</a>
+  </div>
+</header>
+
+<main id="atas">
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Meja VIP di poket anda. Semuanya duit palsu.</h1>
+      <p class="lead">36 game kasino dalam satu aplikasi: slot dengan free spin, meja kad dan rulet, serta game pantas. Mula dengan RM10 percuma dan naik tahap VIP sehingga Maharaja.</p>
+      <div class="cta">
+        <a class="btn main play" href="#mula">Main sekarang</a>
+        <a class="btn ghost" href="#lantai">Lihat semua game</a>
+      </div>
+      <p class="fine">Untuk umur 18 tahun ke atas. Tiada deposit dan tiada pengeluaran. Duit dalam game tidak boleh ditukar kepada wang sebenar.</p>
+    </div>
+    <div class="table" aria-labelledby="demo-t">
+      <h2 id="demo-t">Cuba satu pusingan</h2>
+      <p class="sub">Demo ringkas dengan RM10 duit palsu. Bayaran di sini bukan bayaran sebenar dalam game.</p>
+      <div class="reels" id="reels" aria-live="polite">
+        <div class="reel"><span>👑</span></div><div class="reel"><span>💎</span></div><div class="reel"><span>⚡</span></div>
+      </div>
+      <div class="row">
+        <div class="credit" id="credit">RM10.00<small>Pertaruhan RM0.50</small></div>
+        <button class="btn main" id="spin">Pusing</button>
+      </div>
+      <p class="say" id="say">Tiga simbol sama menang besar. Dua simbol sama dapat modal balik.</p>
+    </div>
+  </div>
+</section>
+
+<section id="lantai" class="alt">
+  <div class="wrap">
+    <div class="head">
+      <div><h2>Lantai kasino</h2><p style="margin-top:8px">Pilih jenis game. Setiap game ada jadual bayaran dan peraturan dalam butang Info.</p></div>
+      <div class="tabs" role="group" aria-label="Tapis jenis game">
+        <button class="tab" data-k="semua" aria-pressed="true">Semua</button>
+        <button class="tab" data-k="slot" aria-pressed="false">Slot</button>
+        <button class="tab" data-k="meja" aria-pressed="false">Meja</button>
+        <button class="tab" data-k="pantas" aria-pressed="false">Pantas</button>
+      </div>
+    </div>
+    <ul class="games" id="games"></ul>
+    <p class="count" id="count"></p>
+  </div>
+</section>
+
+<section id="ciri">
+  <div class="wrap">
+    <div class="head"><h2>Dibina untuk kekal menarik</h2></div>
+    <dl class="ledger">
+      <div><dt>Akaun dan papan pendahulu</dt><dd>Daftar sekali, log masuk dari telefon mana pun. Nama pengguna unik dan satu peranti satu akaun. Papan pendahulu mingguan menunjukkan pemain sebenar.</dd></div>
+      <div><dt>Bonus setiap hari</dt><dd>Bonus harian, roda bertuah sekali sehari, dan misi yang bertambah sukar. Tiga pemain teratas mingguan dapat ganjaran.</dd></div>
+      <div><dt>Free spin dan beli bonus</dt><dd>Slot seperti Olympus 1000, Zeus dan Gold Rush Megaways ada free spin. Slot terpilih membolehkan anda beli terus ke bonus.</dd></div>
+      <div><dt>Hasil dikira di pelayan</dt><dd>Syiling Emas, Roda Mega dan Rulet Emas dikira di pelayan bila akaun disambung. Game lain akan dipindahkan secara berperingkat.</dd></div>
+      <div><dt>Melayu dan English</dt><dd>Tukar bahasa bila-bila masa tanpa muat semula halaman.</dd></div>
+      <div><dt>Bantuan dalam game</dt><dd>Hantar laporan pepijat terus kepada pembangun. Kalau duit habis, mohon bantuan kewangan dan nampak keputusannya dalam game.</dd></div>
+    </dl>
+    <h3 style="margin-top:48px;font-size:24px">Naik tahap VIP</h3>
+    <p class="lead" style="margin-top:6px">Setiap RM1 yang dipertaruh memberi 1 XP.</p>
+    <div class="ladder" role="list"><div role="listitem">Gangsa</div><div role="listitem">Perak</div><div role="listitem">Emas</div><div role="listitem">Berlian</div><div role="listitem">Legenda</div><div role="listitem">Maharaja</div></div>
+  </div>
+</section>
+
+<section id="mula" class="alt">
+  <div class="wrap">
+    <div class="head"><h2>Cara mula</h2><a class="btn main play" href="#mula" id="play2">Buka game</a></div>
+    <ol class="steps">
+      <li><h3>Daftar akaun</h3><p>Pilih nama pengguna dan kata laluan. Anda terus dapat RM10 duit palsu.</p></li>
+      <li><h3>Main dan kumpul bonus</h3><p>Ambil bonus harian, putar roda, siapkan misi, dan cuba game yang berbeza.</p></li>
+      <li><h3>Naik tahap</h3><p>Semakin banyak anda main, semakin tinggi tahap VIP anda dalam papan pendahulu.</p></li>
+    </ol>
+    <p class="fine" id="notice" hidden>Pautan permainan belum ditetapkan. Pemilik laman: isi nilai GAME_URL dalam fail ini.</p>
+  </div>
+</section>
+
+<section id="care">
+  <div class="wrap care">
+    <div>
+      <h2>Main dengan sihat</h2>
+      <p class="lead" style="margin-top:12px">Ini game hiburan. Tiada wang sebenar terlibat, dan kami mahu ia kekal begitu.</p>
+    </div>
+    <ul>
+      <li>Tiada deposit, tiada pengeluaran, dan tiada pembelian wang sebenar.</li>
+      <li>Peringatan rehat boleh ditetapkan kepada 15, 30 atau 60 minit, dengan rehat 5 minit yang mengunci skrin.</li>
+      <li>Hanya untuk umur 18 tahun ke atas.</li>
+      <li>Hasil setiap pusingan rawak. Pulangan teori setiap game dipaparkan dalam butang Info.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="soalan" class="alt">
+  <div class="wrap" style="max-width:860px">
+    <div class="head"><h2>Soalan lazim</h2></div>
+    <details><summary>Adakah ini wang sebenar?</summary><p>Tidak. Semua duit dalam game ialah duit palsu dan tidak boleh ditukar kepada wang sebenar.</p></details>
+    <details><summary>Saya lupa kata laluan. Apa patut saya buat?</summary><p>Hubungi admin game dan beritahu nama pengguna anda. Admin boleh tetapkan kata laluan baharu, dan anda log masuk semula.</p></details>
+    <details><summary>Boleh main tanpa internet?</summary><p>Selepas game dipasang ke skrin utama telefon, ia boleh dibuka tanpa internet. Fungsi akaun, papan pendahulu dan hasil di pelayan memerlukan sambungan.</p></details>
+    <details><summary>Duit saya habis. Bagaimana?</summary><p>Ambil bonus harian dan putar roda bertuah. Kalau baki bawah RM1, anda boleh mohon bantuan kewangan di tab Bantuan, sekali setiap 24 jam.</p></details>
+    <details><summary>Saya jumpa pepijat.</summary><p>Tekan Lapor masalah game ini di dalam game. Laporan sampai terus kepada pembangun bersama maklumat peranti.</p></details>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap"><span>Royal Choice, dibuat oleh BDIR DEV</span><span>Duit palsu sahaja. Umur 18 tahun ke atas.</span><span id="yr"></span></div>
+</footer>
+
+<script>
+const GAME_URL = 'main/';   // game berada dalam folder main. Boleh tukar kepada pautan penuh jika game dihos di tempat lain
+const GAMES = [
+ ['slot','🔱','Olympus 1000','Grid 6×5, tumble dan pengganda sehingga ×1000'],
+ ['slot','⚡','Zeus','Liar Zeus dan panahan petir sehingga ×25'],
+ ['slot','🪙','Fortune Coin','Kutip syiling bernilai sehingga ×100'],
+ ['slot','⛏️','Gold Rush Megaways','Baris berubah setiap spin dan free spin dengan pengganda naik'],
+ ['slot','🐉','Dragon Link','Hold &amp; Spin dengan GRAND ×300'],
+ ['slot','📖','Book of Pharaoh','Simbol pengembang dalam free spin'],
+ ['slot','😈','Devil Fire','Syaitan liar mengembang, jackpot GRAND ×600'],
+ ['slot','💰','Harta Karun','Tiga gelung klasik dengan bayaran sehingga ×100'],
+ ['slot','🗝️','Harta Karun 5','Lima gelung, bayar tiga hingga lima simbol sama'],
+ ['meja','🃏','Blackjack VIP','Kalahkan bank ke 21'],
+ ['meja','🎴','Bakara Diraja','Pemain, Bankir atau Seri'],
+ ['meja','♠️','Hold\'em Kasino','Lawan peniaga dengan ante dan panggil'],
+ ['meja','🎡','Rulet Emas','Nombor 0-36, bayar sehingga ×36'],
+ ['meja','🂡','Poker Tiga Kad','Main atau lipat selepas nampak kad'],
+ ['meja','🐲','Naga vs Harimau','Kad lebih tinggi menang'],
+ ['meja','🎲','Dadu Diraja','Besar atau kecil dengan tiga dadu'],
+ ['meja','⚔️','Perang Kad','Satu kad, satu keputusan'],
+ ['meja','🎰','Poker Video','Tahan kad terbaik, tukar yang lain'],
+ ['meja','🏦','Tawaran Bankir','Ambil tawaran atau teruskan membuka peti'],
+ ['pantas','🚀','Angkasawan','Ambil duit sebelum angkasawan hilang'],
+ ['pantas','💎','Lombong Emas','Buka petak, elak bom'],
+ ['pantas','🏰','Menara Naga','Naiki 8 tingkat, setiap tingkat ada 1 bom'],
+ ['pantas','🐔','Ayam Berani','Seberang lorong sehingga selamat'],
+ ['pantas','⚽','Penalti Juara','Jaringkan gol berturut-turut'],
+ ['pantas','🏎️','Lumba Superkar','Pilih kereta dan lihat siapa menang'],
+ ['pantas','💠','Berlian Ajaib','Padankan lima permata'],
+ ['pantas','🎟️','Kad Gores Emas','Gores enam kotak'],
+ ['pantas','🎯','Roda Mega','Roda 12 bahagian hingga ×3'],
+ ['pantas','🔮','Bola Bertuah','Pilih lima nombor dari sepuluh yang diundi'],
+ ['pantas','🎲','Dadu Ramal','Teka angka di atas atau di bawah'],
+ ['pantas','🌌','Lompat Galaksi','Pilih sasaran pengganda'],
+ ['pantas','🪙','Syiling Emas','Kepala atau ekor, menang ×1.9'],
+ ['pantas','↕️','Tinggi Rendah','Teka kad seterusnya'],
+ ['pantas','🥤','Cawan Misteri','Ikut bola di bawah tiga cawan'],
+ ['pantas','📍','Jatuh Bertuah','Jatuhkan bola, hujung papan bayar paling tinggi'],
+ ['pantas','🏹','Panahan Emas','Tepat ke tengah, menang sehingga ×13']
+];
+const ul=document.getElementById('games'),cnt=document.getElementById('count'),tabs=[...document.querySelectorAll('.tab')];
+function show(k){
+  ul.innerHTML=GAMES.filter(g=>k=='semua'||g[0]==k).map(g=>'<li><span class="chip" aria-hidden="true">'+g[1]+'</span><div><b>'+g[2]+'</b><span>'+g[3]+'</span></div></li>').join('');
+  cnt.textContent=ul.children.length+' game'+(k=='semua'?' dalam kesemuanya.':' dalam kategori ini.');
+  tabs.forEach(t=>t.setAttribute('aria-pressed',t.dataset.k==k))
+}
+tabs.forEach(t=>t.onclick=()=>show(t.dataset.k));show('semua');
+document.getElementById('yr').textContent='© '+new Date().getFullYear();
+if(GAME_URL)document.querySelectorAll('.play').forEach(a=>{a.href=GAME_URL});
+else document.getElementById('notice').hidden=false;
+/* demo mesin slot */
+const SYM=['👑','💎','⚡','🍇','🏺','7️⃣'],reels=[...document.querySelectorAll('.reel')],cr=document.getElementById('credit'),say=document.getElementById('say'),btn=document.getElementById('spin');
+let bal=1000;const bet=50,fm=n=>'RM'+(n/100).toFixed(2),rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+const paint=()=>cr.innerHTML=fm(bal)+'<small>Pertaruhan '+fm(bet)+'</small>';
+btn.onclick=async()=>{
+  if(bal<bet){bal=1000;paint();say.textContent='Demo dimulakan semula dengan RM10.';btn.textContent='Pusing';return}
+  btn.disabled=true;bal-=bet;paint();reels.forEach(r=>r.classList.remove('win'));
+  const out=[0,1,2].map(()=>Math.floor(Math.random()*SYM.length));
+  if(!rm)reels.forEach(r=>r.classList.add('spin'));
+  for(let i=0;i<3;i++){
+    if(!rm)for(let k=0;k<5+i*4;k++){reels[i].firstChild.textContent=SYM[Math.floor(Math.random()*SYM.length)];await new Promise(r=>setTimeout(r,70))}
+    reels[i].classList.remove('spin');reels[i].firstChild.textContent=SYM[out[i]]
+  }
+  const same=new Set(out).size;let pay=0;
+  if(same==1)pay=out[0]==0?bet*20:bet*8;else if(same==2)pay=bet;
+  bal+=pay;paint();
+  if(pay>bet){reels.forEach(r=>r.classList.add('win'));say.textContent='Menang '+fm(pay-bet)+'!'}
+  else if(pay==bet)say.textContent='Dua simbol sama. Modal dipulangkan.';
+  else say.textContent=bal<bet?'Duit demo habis. Tekan Mulakan semula.':'Tiada padanan. Cuba lagi.';
+  btn.textContent=bal<bet?'Mulakan semula':'Pusing';btn.disabled=false
+};
+</script>
+</body>
+</html>
