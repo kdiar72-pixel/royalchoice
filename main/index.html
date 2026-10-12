@@ -4141,6 +4141,7 @@ details p {
 .tile{transition:transform .15s,box-shadow .2s}.tile:active{transform:scale(.93)}
 #g{position:relative}.fwin2{position:absolute;left:50%;top:30%;z-index:6;font:900 28px Cinzel,serif;font-style:normal;color:#fff6b0;text-shadow:0 2px 0 #7a4a00,0 0 14px #ffd23a;pointer-events:none;animation:fwn .95s ease-out forwards}
 .dvtabs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}.dvtabs .b{flex:1 1 28%;min-height:0!important;padding:9px 6px!important;font-size:14px!important}
+#av{padding:0!important;overflow:hidden;display:grid;place-items:center}#av img{width:100%;height:100%;object-fit:cover;border-radius:50%;display:block}.av img{width:100%;height:100%}
 </style>
 </head>
 <body>
@@ -6918,7 +6919,7 @@ function archR() {
    wa    : nombor WhatsApp tanpa +, tanpa tanda (cth '60123456789')
    Jika kosong, pemain boleh salin / kongsi laporan sahaja. */
 const SUPPORT = { email: '', wa: '' };
-const VERSION = 'v27';
+const VERSION = 'v28';
 
 /* ---------- toast ---------- */
 let toastT = 0;
@@ -7312,7 +7313,14 @@ function bpRound(){
 /* ===== GAME BAHARU v13: Olympus 1000 · Zeus · Fortune Coin (free spin, animasi penuh) ===== */
 const OLSYM=['💎','🔷','🟣','🍇','🏺','👑','⏳','🔱','⚡'];
 const IC3=(a,b,t)=>'<circle cx="50" cy="50" r="44" fill="'+a+'" stroke="'+b+'" stroke-width="5"/><text x="50" y="66" font-size="48" text-anchor="middle">'+t+'</text>';
-ICONS.ol=IC3('#3a1a8a','#ffd23a','⚡');ICONS.zs=IC3('#1a3a8a','#9be4ff','🏛');ICONS.fc=IC3('#a86a00','#fff3b0','🪙');
+const ICS=(bg,ring,shape)=>'<circle cx="50" cy="50" r="44" fill="'+bg+'" stroke="'+ring+'" stroke-width="5"/>'+shape;
+ICONS.ol=ICS('#3a1a8a','#ffd23a','<polygon points="57,14 29,55 48,55 41,87 72,44 53,44" fill="#ffd23a" stroke="#fff3b0" stroke-width="2" stroke-linejoin="round"/>');
+ICONS.zs=ICS('#1a3a8a','#9be4ff','<polygon points="22,40 50,17 78,40" fill="#e9f6ff"/><g fill="#e9f6ff"><rect x="27" y="44" width="9" height="30"/><rect x="41" y="44" width="9" height="30"/><rect x="55" y="44" width="9" height="30"/><rect x="69" y="44" width="5" height="30"/></g><rect x="20" y="77" width="60" height="8" fill="#e9f6ff"/>');
+ICONS.fc=ICS('#a86a00','#fff3b0','<circle cx="50" cy="50" r="27" fill="#ffd23a" stroke="#fff3b0" stroke-width="4"/><circle cx="50" cy="50" r="19" fill="none" stroke="#a86a00" stroke-width="3"/><polygon points="50,36 54,46 65,46 56,53 59,64 50,57 41,64 44,53 35,46 46,46" fill="#a86a00"/>');
+ICONS.dl=ICS('#7a0a1a','#ffd23a','<path d="M50 14C58 30 74 38 71 58C69 74 57 84 50 86C43 84 31 74 29 58C27 44 38 38 42 26C46 33 48 24 50 14Z" fill="#ff6a1a"/><path d="M50 40C55 50 62 54 60 64C59 72 54 76 50 77C46 76 41 72 40 64C39 56 46 52 50 40Z" fill="#ffd23a"/>');
+ICONS.mw=ICS('#5a3a0a','#ffd23a','<path d="M24 38Q50 14 76 38" fill="none" stroke="#e8e8f0" stroke-width="9" stroke-linecap="round"/><rect x="46" y="30" width="8" height="54" rx="3" fill="#c98a4a"/>');
+ICONS.bp=ICS('#6a4a0a','#ffe9a0','<path d="M17 30H48V77H17Z" fill="#fff6d8" stroke="#8a5d00" stroke-width="3"/><path d="M52 30H83V77H52Z" fill="#fff6d8" stroke="#8a5d00" stroke-width="3"/><path d="M26 42H40M26 52H40M26 62H40M60 42H74M60 52H74M60 62H74" stroke="#8a5d00" stroke-width="3"/>');
+ICONS.ch=ICS('#0b5a3a','#ffd23a','<path d="M50 17C50 17 24 39 24 56C24 66 34 70 42 64C42 72 38 78 34 83H66C62 78 58 72 58 64C66 70 76 66 76 56C76 39 50 17 50 17Z" fill="#fff6d8"/>');
 const fx2=(r,c,ms)=>{r.classList.remove(c);void r.offsetWidth;r.classList.add(c);setTimeout(()=>r.classList.remove(c),ms||600)};
 function ngSlot(cf){
   const gid=cur,root=D(cf.html+'<div class="fsb" hidden></div><div class="flsh"></div>','ngb '+cf.cls),lab=D(cf.hint,'dvl'),note=D(cf.note,'sm'),
@@ -7512,10 +7520,9 @@ function holdemR(){
   show(area,ctl);area.innerHTML='<div class="sm">Tekan Bahagi kad. Ante = pertaruhan semasa. Peniaga layak dengan pasangan 4 atau lebih.</div>';home()
 }
 
-ICONS.s5=ICONS.sl;ICONS.ch=IC3('#0b5a3a','#ffd23a','♠');
+ICONS.s5=ICONS.sl;
 /* ===== v16: Gold Rush Megaways · Dragon Link · Book of Pharaoh ===== */
 const MWSYM=['♦','♣','♥','♠','⛏️','🛒','🏆','🤠','⭐'],BPSYM=['A','K','Q','J','🪲','☥','👁️','🏺','📖'];
-ICONS.mw=IC3('#5a3a0a','#ffd23a','⛏️');ICONS.dl=IC3('#7a0a1a','#ffd23a','🐉');ICONS.bp=IC3('#6a4a0a','#ffe9a0','📖');
 const mwCell=s=>'<i class="mx s'+s+'">'+MWSYM[s]+'</i>',bpCell=s=>'<i class="bx2 s'+s+'">'+BPSYM[s]+'</i>';
 function megawaysR(){ngSlot({cls:'mwb',hint:'Tekan PUSING. Simbol sama dari kiri ke kanan = menang. 4 ⭐ = Free Spin, pengganda naik setiap spin!',
   note:'6 gelung · 2–7 baris berubah · ways-to-win · liar 🤠 · pulangan ~94%',
